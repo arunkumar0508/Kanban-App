@@ -1,0 +1,209 @@
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .darkcyan-button {
+    background-color: DarkCyan;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .darkcyan-button:hover {
+    background-color: DarkSlateGray; /* Darken the color on hover */
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .darkcyan-button:active {
+    background-color: DarkOliveGreen; /* Change color when clicked */
+    transform: scale(0.95); /* Slightly reduce size when clicked */
+  }
+  
+  
+  
+  .card {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    /* background-color: #ffffff; */
+    display: inline-block;
+    width: calc(30%);
+    vertical-align: top;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-control {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .btn-primaryy {
+    background-color: darkcyan;
+    color: #fff;
+    margin-bottom: 10%;
+    /* margin-left: 55px; */
+  }
+
+  .btn-primary {
+    background-color: darkcyan;
+    color: #fff;
+    margin-bottom: 10%;
+    margin-left: 50px;
+  }
+  /* .btn-primaryy {
+    background-color: darkcyan;
+    color: #fff;
+    margin-top: -50px;
+  } */
+  
+  .btn-primary:hover {
+    background-color:darkcyan;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  /* .btn-secondaryy {
+    background-color:darkcyan;
+    color: #fff;
+    margin-top: -50px;
+  } */
+  .btn-secondary:hover {
+    background-color: #545b62;
+  }
+  
+  .list-group-item {
+    padding: 10px;
+    border: none;
+  }
+  
+  .list-group-item p {
+    margin: 0;
+  }
+   
+  .list-group-item p:last-child {
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+ 
+  .cdk-drag {
+    cursor: move;
+    background-color: darkcyan;
+    border: 1px solid darkcyan; 
+    margin-top: 2px;
+  }
+  
+  /* Add styles for drop target columns */
+  .cdk-drop-list {
+    min-height: 100px; /* Adjust this value to control the drop target area size */
+    border: 2px ;
+  }
+  
+  /* Center the modal dialog */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  
+  .modal-dialog {
+    max-width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .form-container {
+    position: fixed;
+    top: 110px; /* Adjust top position based on your header height */
+    left: -300px; /* Start off-screen to the left */
+    bottom: 70px; /* Adjust bottom position based on your footer height */
+    width: 300px; /* Adjust to your desired width */
+    background-color: white;
+    transition: left 0.3s ease-in-out; /* Add a smooth transition */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Add a higher z-index value */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+  }
+  
+  .form-container.show {
+    left: 0; /* Slide in from the left */
+  }
+  
+  .form-container.hide {
+    left: -300px; /* Slide out to the left */
+  }
+  
+  /* Add other styling as needed */
+  
+  .form {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .modal-container {
+    position: fixed;
+    top: 110px; /* Adjust top position based on your header height */
+    bottom: 70px; /* Adjust bottom position based on your footer height */
+    right: -300px; /* Start off-screen to the right */
+    width: 300px; /* Adjust to your desired width */
+    background-color: white;
+    transition: left 0.3s ease-in-out; /* Add a smooth transition */
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Add a higher z-index value */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+  }
+  
+  .modal-container.show {
+    right: 0; /* Slide in from the right */
+  }
+  
+  .modal-container.hide {
+    right: -300px; /* Slide out to the right */
+  }
+  
+.btn-danger{
+
+  margin-left: 75px;
+
+}  

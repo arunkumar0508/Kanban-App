@@ -1,0 +1,55 @@
+.user-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1{
+  margin-bottom: 80%;
+  margin-left: 30%;
+  font-size: 36px;
+  word-spacing: 1px;
+  color: darkcyan;
+}
+
+
+
+.button-link, .button-logout {
+  background-color: cadetblue; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: -100%;
+
+}
+
+.button-link:hover, .button-logout:hover {
+  background-color: cadetblue; /* Hover color */
+  margin-top: 10px;
+}
+
+/* .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+} */
+
+.logo {
+  max-width: 45%; 
+  
+}
+.logo1 {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.logo2 {
+  margin-top: 20px;
+  /* margin-right: 3px; */
+}

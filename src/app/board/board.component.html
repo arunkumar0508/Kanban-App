@@ -1,0 +1,80 @@
+<div class="container" *ngIf="board">
+  <button class="darkcyan-button" [routerLink]="['/project']">View Projects</button>
+
+  <h2>{{ board.name }}</h2>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card" *ngFor="let column of board?.columns; let i = index">
+        <div class="card-body" (click)="selectColumn(i)">
+          <h5 class="card-title">{{ column?.name }}</h5>
+
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let task of column?.tasks">
+              <button class="btn btn-link" (click)="showTaskDetails(task)">{{ task?.title }}</button>
+            </li>
+          </ul>
+
+          <div class="form-group" *ngIf="i === 0">
+            <button class="btn btn-primary" (click)="openAddTaskForm()">Add Task</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" [ngClass]="{'shift-right': isFormOpen}">
+  </div>
+
+</div>
+
+
+
+<div class="form-container" [ngClass]="{'show': isFormOpen, 'hide': !isFormOpen}">
+  <div class="form" id="addTaskForm">
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="newTaskTitle" placeholder="Task Title">
+      <input type="text" class="form-control" [(ngModel)]="newTaskDescription" placeholder="Task Description">
+      <select class="form-control" [(ngModel)]="newTaskAssigningName">
+        <option *ngFor="let userName of userNames" [value]="userName">{{ userName }}</option>
+      </select>      <button class="btn btn-primaryy" (click)="addTask(); closeAddTaskForm();">Save Task</button>
+      <button class="btn btn-secondary" (click)="closeAddTaskForm()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+ 
+<div class="modal-container" [ngClass]="{'show': openTaskDetailsModal, 'hide': !openTaskDetailsModal}">
+  <div class="modal" id="taskDetailsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" aria-label="Close" (click)="hideTaskDetails()" style="position: absolute; top: 10px; right: 10px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <h2>Title: {{ selectedTask?.title }}</h2>
+          <p>Description: {{ selectedTask?.description }}</p>
+          <p>Name: {{ selectedTask?.assigningname }}</p>
+          <div class="form-group">
+            <label for="newStatus">New Status:</label>
+            <select class="form-control" id="newStatus" [(ngModel)]="newTaskStatus">
+              <option value="To Do">To Do</option>
+              <option value="Working">Working</option>
+              <option value="Completed">Completed</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" (click)="updateTaskStatusAndMove(selectedTask, newTaskStatus, targetColumn)">Update Status</button>
+          <button class="btn btn-danger" (click)="deleteTask(selectedColumn,selectedTask)">Delete</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

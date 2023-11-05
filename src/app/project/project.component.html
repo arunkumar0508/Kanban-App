@@ -1,0 +1,21 @@
+<app-search (searchChanged)="onSearch($event)"></app-search>
+
+<div class="container">
+  <h2>Your Projects</h2>
+  <button class="btn btn-success" [routerLink]="['/addproject']">Add Project</button>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let project of filteredProjects">
+      <a [routerLink]="['/project-details', project?.id]">
+        <mat-card class="project-card">
+          <mat-card-content>
+            <h5 class="card-title">{{ project.name }}</h5>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button color="darkcyan">View Details</button>
+          </mat-card-actions>
+        </mat-card>
+      </a>
+    </div>
+  </div>
+</div>

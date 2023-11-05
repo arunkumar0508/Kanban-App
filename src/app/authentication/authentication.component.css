@@ -1,0 +1,134 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  
+  /* .login-container { */
+    /* background-image: url('../../assets/1000_F_211127810_cDoyAC5gFkUviefGO76qT3DRm6gILySo.jpg'); Replace 'path-to-your-background-image.jpg' with the actual path to your image file */
+    background-size: cover; /* This ensures the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image horizontally and vertically */
+    /* position: absolute; */
+    
+    backface-visibility: initial;
+  }
+  form{
+    color: whitesmoke;
+  }
+  img{
+    margin-top: 0%;
+  }
+  
+  mat-card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: darkcyan
+  }
+  
+  mat-card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+ /* Define custom styles for the Sign In button */
+.custom-sign-in-button {
+  background-color: darkcyan; /* Your desired background color */
+  color: #ffffff;
+  border: none; /* Your desired text color */
+  font-size: 16px; /* Your desired font size */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px 20px; /* Add padding to adjust button size */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.custom-sign-in-buttonn {
+  margin-top: 10px;
+  margin-left: 35px;
+  background-color: darkcyan; /* Your desired background color */
+  color: #ffffff;
+  border: none; /* Your desired text color */
+  font-size: 16px; /* Your desired font size */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px 20px; /* Add padding to adjust button size */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+.signupp{
+  background-color: darkcyan; /* Your desired background color */
+  color: #ffffff;
+  border: none; /* Your desired text color */
+  font-size: 16px; /* Your desired font size */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px 20px; /* Add padding to adjust button size */
+  transition: background-color 0.3s ease; 
+
+}
+.login-button{
+background-color: darkcyan; /* Your desired background color */
+color: #ffffff;
+border: none; /* Your desired text color */
+font-size: 16px; /* Your desired font size */
+border-radius: 5px; /* Add border radius for rounded corners */
+padding: 10px 20px; /* Add padding to adjust button size */
+transition: background-color 0.3s ease; 
+margin-top: 5px;
+margin-left: 70px;
+
+}
+
+/* Define styles for the button on hover */
+.custom-sign-in-button:hover {
+  background-color: #0056b3; /* Your desired hover background color */
+}
+
+  
+  button[type="submit"] {
+    width: 100%;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup-link a {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  .signUp {
+    margin-bottom: 5%;
+    padding: 20px; /* Add padding for spacing inside the card */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #fff; /* Set background color to white */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect for hover */
+  }
+  .loginn{
+    margin-bottom: 5%;
+    padding: 20px; /* Add padding for spacing inside the card */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: #fff; /* Set background color to white */
+    transition: transform 0.2s ease-in-out;
+  }
+  /* Modify the white-form-field class to set the background color to white smoke */
+/* .white-form-field {
+  background-color: whitesmoke;
+} */
+
+
+  
+  /* Add a hover effect to scale the card slightly on hover */
+  .signUp:hover {
+    transform: scale(1.05);
+  }
+  .login-container{
+    margin-top: 5%;
+  }
+  

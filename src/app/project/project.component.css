@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-success {
+    background-color: darkcyan;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    flex-basis: calc(33.33% - 20px); /* Adjusted width for 3 cards per row with a small margin between them */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    color: darkcyan;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col-md-4 {
+      flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
+  .project-card {
+    display: flex;
+    background-color: darkcyan;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  .project-card a {
+    text-decoration: none !important; /* Remove text decoration for links within the card */
+    color: inherit; /* Inherit the color from the parent */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button.mat-button {
+    background-color: darkcyan;
+    color: darkcyan;
+    margin: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  button.mat-button:hover {
+    background-color: darkcyan;
+  }
+/* 
+app-search {
+  display: block;
+  margin-left: 10%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
